@@ -33,7 +33,7 @@ void input()
 
 void bubbleSortArray()
 {
-    int passs = 1;
+    int pass = 1;
     do
     {
        for (int j = 0; j <= nPanjang - 1 - pass; j++)
@@ -44,7 +44,7 @@ void bubbleSortArray()
             element[j] = element[j + 1];
             element[j + 1] = temp;
         }
-       } /* code */
-    } 
-    
+       } 
+       pass++;
+    }  while (pass <= nPanjang - 1);
 }
